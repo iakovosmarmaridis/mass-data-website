@@ -626,6 +626,28 @@ export default function Home() {
             />
             <p className="mt-4 text-sm text-slate-500">
               © {new Date().getFullYear()} Mass Data. {t.footer}
+              <div className="mt-4 flex flex-col gap-2 text-sm text-slate-500">
+  <a
+    href={language === "el" ? "/privacy" : "/privacy-en"}
+    className="hover:text-[#137DC5]"
+  >
+    {language === "el" ? "Πολιτική Απορρήτου" : "Privacy Policy"}
+  </a>
+
+  <a
+    href={language === "el" ? "/cookies" : "/cookies-en"}
+    className="hover:text-[#137DC5]"
+  >
+    {language === "el" ? "Πολιτική Cookies" : "Cookies Policy"}
+  </a>
+
+  <a
+    href={language === "el" ? "/terms" : "/terms-en"}
+    className="hover:text-[#137DC5]"
+  >
+    {language === "el" ? "Όροι Χρήσης" : "Terms of Use"}
+  </a>
+</div>
             </p>
           </div>
 
